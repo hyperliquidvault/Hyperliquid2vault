@@ -15,14 +15,11 @@ THRESHOLD = 60000
 EMAIL_TO = "latuihf@gmail.com"
 
 # SMTP credentials from GitHub Secrets
-SMTP_HOST = os.getenv("smtp.gmail.com
-")
-SMTP_PORT = int(os.getenv("587
-"))
-SMTP_USER = os.getenv("hahj18420@gmail.com
-")
-SMTP_PASS = os.getenv("bngt jtrc hdhe srvh
-")
+SMTP_HOST = os.getenv("SMTP_HOST")
+SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
+SMTP_USER = os.getenv("SMTP_USER")
+SMTP_PASS = os.getenv("SMTP_PASS")
+
 
 
 def parse_amount(text):
